@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name = "format-detection" content = "telephone=no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <link rel="stylesheet"  href="spec/lib/jquery-mobile-flat/jquery.mobile.flatui.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPvR5DwF14J6oK3NSEWpKtMsNg0xsIIO4&sensor=true"></script>
+  <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="app">
+
+  <div id="page-1" data-role="page">
+    <div data-role="content">
+      <a data-icon="flat-heart" data-theme="d" href="#page-2" data-role="button">Second Page</a>
+      <div id="map_canvas"></div>
+      <div class="position">
+        <div class="pos-box">
+          <label>Longitude</label>
+          <div id="lon"></div>
+        </div>
+        <div class="pos-box">
+          <label>Latitude</label>
+          <div id="lat"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-2" data-role="page">
+    <div data-role="content">
+      <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+        <a href="#page-1"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+        <h1>Sample Form</h1>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="spec/lib/jquery-1.11.1.min.js"></script>
+<script src="spec/lib/jquery.mobile-1.4.2.min.js"></script>
+<script src="spec/lib/fastclick.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
